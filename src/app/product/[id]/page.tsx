@@ -20,7 +20,7 @@ import relative1 from '../../assets/related-1.svg';
 import relative2 from '../../assets/related-2.svg';
 import relative3 from '../../assets/related-3.svg';
 import Link from "next/link";
-import CartClient from "@/app/componets/CartClient";
+import CartClient from "@/app/cartClient/page";
 
 
 

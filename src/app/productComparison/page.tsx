@@ -5,7 +5,7 @@ import starsProd from '../assets/stars-product.svg'
 import line from '../assets/lineProduct.svg'
 import divan2Prod from '../assets/product-compr1.png'
 import PageComp from '../componets/page'
-import Feature from '../componets/feature'
+import Feature from "../feature/page";
 
 function PageProductComparison() {
   return (

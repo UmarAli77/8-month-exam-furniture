@@ -2,7 +2,7 @@
 import { ChangeEvent, useState } from "react";
 import PageComp from "../componets/page"
 import 'react-toastify/dist/ReactToastify.css';
-import Feature from '../componets/feature';
+import Feature from "../feature/page";
 import { ToastContainer, toast } from 'react-toastify';
 
 

@@ -5,7 +5,7 @@ import axios from "axios";
 import Image from "next/image";
 import deleteImg from '../assets/delete.svg'
 import { title } from "process";
-import Feature from "../componets/feature";
+import Feature from "../feature/page";
 
 interface Cart {
   _id: string;

@@ -5,7 +5,8 @@ import filterR1 from '../assets/filter-right-1.svg';
 import filterR2 from '../assets/filter-right-2.svg';
 import filterR3 from '../assets/filter-right-3.svg';
 import Product from '../product/page';
-import Feature from '../componets/feature';
+import Feature from "../feature/page";
+
 
 function Page() {
   return (

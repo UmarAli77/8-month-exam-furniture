@@ -7,7 +7,7 @@ import phone from '../assets/phone.svg';
 import time from '../assets/time.svg';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Feature from '../componets/feature';
+import Feature from "../feature/page";
 
 interface IInitialState {
     name: string,

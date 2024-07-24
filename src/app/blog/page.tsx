@@ -13,7 +13,7 @@ import peopleBlog from '../assets/people-Blog.svg';
 import sanaBlog from '../assets/sana.svg';
 import checkSana from '../assets/check.svg';
 import search from '../assets/search-icon.svg'
-import Feature from '../componets/feature'
+import Feature from '../feature/page'
 
 function PageBlog() {
   return (

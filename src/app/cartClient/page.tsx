@@ -1,6 +1,8 @@
 "use client"
 import { useEffect, useState } from "react"
 import { json } from "stream/consumers";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 interface CartClientMessage {
     message: string;
@@ -29,6 +31,10 @@ const CartClient: React.FC<CartClientMessage> = ({ message }) => {
         } else {
           cart.push(id);
           localStorage.setItem('product-details', JSON.stringify(cart));
+          toast.success("Completed successfully", {
+            position: "top-right",
+            autoClose: 5000,
+          })
           setCart(true);
         }
     };
@@ -41,6 +47,7 @@ const CartClient: React.FC<CartClientMessage> = ({ message }) => {
             <button onClick={increment} className="text-xl font-medium text-black">+</button>
         </div>
         <button onClick={handleSubmit} className="w-[215px] h-[60px] border rounded-xl border-black">Add To Cart</button>
+        <ToastContainer />
         </div>
     </div>
   )
