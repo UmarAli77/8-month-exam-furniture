@@ -3,7 +3,6 @@ import { useEffect, useState } from "react"
 import axios from "axios";
 import Image from "next/image";
 import deleteImg from '../assets/delete.svg'
-import { title } from "process";
 import Feature from "../feature/page";
 import strelka from '../assets/strelka.svg'
 import restagelImg from '../assets/Rectangle layout-img.svg'
@@ -24,7 +23,6 @@ interface Cart {
 function PageCart() {
   const [product, setProduct] = useState([])
   const [cart, setCart] = useState<Cart[]>([])
-  // const [count, setCount] = useState(0);
   useEffect(() => {
     const productLocalStorageJson = JSON.parse(localStorage.getItem("product-details") || "[]")
     setProduct(productLocalStorageJson)
