@@ -4,7 +4,8 @@ import restagelImg from '../assets/Rectangle layout-img.svg'
 
 interface PageCompProps {
     pageName: string;
-  }
+}
+
   
   const PageComp: React.FC<PageCompProps> = ({ pageName }) => {
     return (
@@ -17,5 +18,4 @@ interface PageCompProps {
         </div>
     )
   };
-  
   export default PageComp;

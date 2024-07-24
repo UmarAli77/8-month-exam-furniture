@@ -1,6 +1,5 @@
 "use client"
 import React, { ChangeEvent } from 'react'
-import PageComp from '../componets/page'
 import Image from 'next/image'
 import location from '../assets/location.svg';
 import phone from '../assets/phone.svg';
@@ -8,6 +7,8 @@ import time from '../assets/time.svg';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Feature from "../feature/page";
+import strelka from '../assets/strelka.svg'
+import restagelImg from '../assets/Rectangle layout-img.svg'
 
 interface IInitialState {
     name: string,
@@ -47,7 +48,13 @@ function PageContact() {
   return (
     <div>
         <div>
-            <PageComp pageName='Contact' />
+            <div className="relative flex items-center justify-center">
+            <Image className="z-0" src={restagelImg} alt="res" />
+            <div className="absolute top-10 w-[500px] h-[100px] flex flex-col items-center justify-center mt-[70px]">
+                <h1 className="text-5xl font-medium mb-5">Contact</h1>
+                <h2 className="flex gap-5 text-base font-medium">Home <Image src={strelka} alt="res" /> Contact</h2>
+            </div>
+        </div>
         </div>
         <div className='flex flex-col text-center mt-16 mb-24'>
             <h2 className='text-4xl font-semibold text-black'>Get In Touch With Us</h2>

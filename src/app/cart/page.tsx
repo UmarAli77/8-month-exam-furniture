@@ -1,11 +1,12 @@
 "use client"
 import { useEffect, useState } from "react"
-import PageComp from "../componets/page"
 import axios from "axios";
 import Image from "next/image";
 import deleteImg from '../assets/delete.svg'
 import { title } from "process";
 import Feature from "../feature/page";
+import strelka from '../assets/strelka.svg'
+import restagelImg from '../assets/Rectangle layout-img.svg'
 
 interface Cart {
   _id: string;
@@ -43,7 +44,13 @@ function PageCart() {
   return (
     <div>
         <div>
-            <PageComp pageName="Cart" />
+          <div className="relative flex items-center justify-center">
+            <Image className="z-0" src={restagelImg} alt="res" />
+            <div className="absolute top-10 w-[500px] h-[100px] flex flex-col items-center justify-center mt-[70px]">
+              <h1 className="text-5xl font-medium mb-5">Cart</h1>
+              <h2 className="flex gap-5 text-base font-medium">Home <Image src={strelka} alt="res" />Cart</h2>
+          </div>
+        </div>
         </div>
         <div className="flex flex-row gap-5 items-start">
           <div className="flex flex-col ml-[100px] mt-[72px]">

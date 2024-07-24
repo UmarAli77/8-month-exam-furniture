@@ -1,18 +1,25 @@
 import Image from 'next/image'
-import PageComp from '../componets/page'
 import filterL from '../assets/filter-left.svg'
 import filterR1 from '../assets/filter-right-1.svg';
 import filterR2 from '../assets/filter-right-2.svg';
 import filterR3 from '../assets/filter-right-3.svg';
 import Product from '../product/page';
 import Feature from "../feature/page";
+import strelka from '../assets/strelka.svg'
+import restagelImg from '../assets/Rectangle layout-img.svg'
 
 
 function Page() {
   return (
     <div>
         <div>
-            <PageComp pageName="Shop" />
+        <div className="relative flex items-center justify-center">
+            <Image className="z-0" src={restagelImg} alt="res" />
+            <div className="absolute top-10 w-[500px] h-[100px] flex flex-col items-center justify-center mt-[70px]">
+                <h1 className="text-5xl font-medium mb-5">Shop</h1>
+                <h2 className="flex gap-5 text-base font-medium">Home <Image src={strelka} alt="res" /> Shop</h2>
+            </div>
+        </div>
         </div>
         <div className='bg-rose-200 h-[100px] flex items-center justify-between mt-1'>
             <div className='flex items-center gap-[25px] ml-24'>

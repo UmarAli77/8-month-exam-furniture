@@ -4,14 +4,21 @@ import divaProduct from '../assets/product-compr.svg'
 import starsProd from '../assets/stars-product.svg'
 import line from '../assets/lineProduct.svg'
 import divan2Prod from '../assets/product-compr1.png'
-import PageComp from '../componets/page'
 import Feature from "../feature/page";
+import strelka from '../assets/strelka.svg'
+import restagelImg from '../assets/Rectangle layout-img.svg'
 
 function PageProductComparison() {
   return (
     <div>
       <div className='mb-[50px]'>
-        <PageComp pageName='Product Comparison' />
+        <div className="relative flex items-center justify-center">
+            <Image className="z-0" src={restagelImg} alt="res" />
+            <div className="absolute top-10 w-[500px] h-[100px] flex flex-col items-center justify-center mt-[70px]">
+                <h1 className="text-5xl font-medium mb-5">Product Comparison</h1>
+                <h2 className="flex gap-5 text-base font-medium">Home <Image src={strelka} alt="res" /> Product Comparison</h2>
+            </div>
+        </div>
       </div>
       <div className='flex flex-row items-start justify-around mt-5'>
         <div>

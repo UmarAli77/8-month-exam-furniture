@@ -1,9 +1,11 @@
 "use client"
 import { ChangeEvent, useState } from "react";
-import PageComp from "../componets/page"
 import 'react-toastify/dist/ReactToastify.css';
 import Feature from "../feature/page";
 import { ToastContainer, toast } from 'react-toastify';
+import Image from "next/image";
+import strelka from '../assets/strelka.svg'
+import restagelImg from '../assets/Rectangle layout-img.svg'
 
 
 interface IInitialState {
@@ -60,7 +62,13 @@ function PageCheckout() {
   return (
     <div>
       <div>
-        <PageComp pageName="Checkout" />
+        <div className="relative flex items-center justify-center">
+            <Image className="z-0" src={restagelImg} alt="res" />
+            <div className="absolute top-10 w-[500px] h-[100px] flex flex-col items-center justify-center mt-[70px]">
+                <h1 className="text-5xl font-medium mb-5">Chackout</h1>
+                <h2 className="flex gap-5 text-base font-medium">Home <Image src={strelka} alt="res" /> Chackout</h2>
+            </div>
+        </div>
       </div>
       <div>
         <div>

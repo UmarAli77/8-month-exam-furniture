@@ -1,5 +1,4 @@
 import React from 'react'
-import PageComp from '../componets/page'
 import Image from 'next/image'
 import Blog1 from '../assets/blog-1.svg'
 import Blog2 from '../assets/blog-2.svg'
@@ -14,12 +13,20 @@ import sanaBlog from '../assets/sana.svg';
 import checkSana from '../assets/check.svg';
 import search from '../assets/search-icon.svg'
 import Feature from '../feature/page'
+import strelka from '../assets/strelka.svg'
+import restagelImg from '../assets/Rectangle layout-img.svg'
 
 function PageBlog() {
   return (
     <div>
       <div>
-        <PageComp pageName='Blog' />
+        <div className="relative flex items-center justify-center">
+            <Image className="z-0" src={restagelImg} alt="res" />
+            <div className="absolute top-10 w-[500px] h-[100px] flex flex-col items-center justify-center mt-[70px]">
+              <h1 className="text-5xl font-medium mb-5">Blog</h1>
+              <h2 className="flex gap-5 text-base font-medium">Home <Image src={strelka} alt="res" />Blog</h2>
+          </div>
+        </div>
       </div>
       <div className='flex items-start justify-around mt-[100px]'>
         <div>
