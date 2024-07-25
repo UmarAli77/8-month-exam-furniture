@@ -25,13 +25,12 @@ async function getProducts() {
 
 export default async function Product() {
   const product: IProducts[] = await getProducts()
-  console.log(product)
   return (
     <div>
       <div className="grid grid-cols-4 m-3 gap-[35px] mt-7">
           {
             product.map((p) => (
-              <Link key={p._id} href={`product/${p._id}`}>
+              <Link key={p._id} href={`/product/${p._id}`}>
                 <div className="relative text-left w-[300px] h-auto">
                     <button className="absolute w-[50px] h-[50px] ml-[210px] mt-[30px] bg-rose-400 text-white rounded-full">-30%</button>
                     <Image width={285} height={300} src={p.image} alt={p.subtitle} />
